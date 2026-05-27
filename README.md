@@ -13,7 +13,6 @@ Static academic website. The primary experience is now the one-page `index.html`
 - `assets/portrait.jpg` - local portrait image for reliable GitHub Pages rendering
 - `styles.css` - global styles
 - `script.js` - nav highlighting and reveal animations
-- `CNAME` - GitHub Pages custom domain configuration for `www.cristobalotero.com`
 
 ## Local preview
 
@@ -29,4 +28,4 @@ Open `http://localhost:8000`.
 - Netlify
 - Vercel
 
-For GitHub Pages, keep `CNAME` in the published repository root so the site resolves at `www.cristobalotero.com`.
+When DNS is ready to point `www.cristobalotero.com` to GitHub Pages, add a root-level `CNAME` file containing `www.cristobalotero.com`.
