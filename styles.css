@@ -51,8 +51,14 @@ h2 {
 
 a {
   color: var(--ink);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration-color: rgba(27, 31, 36, 0.35);
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-color: currentColor;
 }
 
 p {
@@ -178,6 +184,11 @@ ul {
   font-size: 1.05rem;
   margin-top: 1rem;
   max-width: 68ch;
+}
+
+.lead a {
+  color: var(--ink);
+  text-decoration-color: rgba(27, 31, 36, 0.35);
 }
 
 .compact-lead {
@@ -343,16 +354,24 @@ ul {
 .paper-links a {
   color: var(--accent);
   font-weight: 600;
+  text-decoration: none;
+}
+
+.paper-links a:hover,
+.paper-links a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 95, 134, 0.45);
 }
 
 .paper-award {
   color: var(--accent);
-  font-style: italic;
-  margin-top: 1.05rem;
+  font-size: 0.95rem;
+  font-style: normal;
+  margin-top: 0.85rem;
 }
 
 .paper-award a {
-  color: var(--accent);
+  color: inherit;
   font-weight: 500;
   text-decoration: none;
 }
@@ -380,6 +399,26 @@ ul {
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.25rem;
   margin-bottom: 0.45rem;
+}
+
+.paper-main h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.paper-main h3 a:hover,
+.paper-main h3 a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 95, 134, 0.35);
+}
+
+.paper-main p:not(.paper-award) {
+  color: var(--ink-muted);
+}
+
+.paper-main p:not(.paper-award) a,
+.paper-main p:not(.paper-award) em {
+  color: var(--ink);
 }
 
 .paper-main p + p {
@@ -469,6 +508,12 @@ ul {
 .details-body a {
   color: var(--accent);
   font-weight: 400;
+  text-decoration-color: rgba(0, 95, 134, 0.35);
+}
+
+.details-body a:hover,
+.details-body a:focus-visible {
+  text-decoration-color: currentColor;
 }
 
 .details-body strong {
@@ -577,8 +622,14 @@ ul {
 
 .site-footer {
   border-top: 1px solid var(--line);
+  color: var(--ink-muted);
   margin-top: 2rem;
   padding: 1.6rem 0;
+}
+
+.site-footer a {
+  color: var(--ink);
+  text-decoration-color: rgba(27, 31, 36, 0.35);
 }
 
 .footer-grid {
