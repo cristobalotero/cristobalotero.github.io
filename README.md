@@ -28,4 +28,4 @@ Open `http://localhost:8000`.
 - Netlify
 - Vercel
 
-When DNS is ready to point `www.cristobalotero.com` to GitHub Pages, add a root-level `CNAME` file containing `www.cristobalotero.com`.
+`CNAME` configures GitHub Pages to serve the site at `www.cristobalotero.com`.
